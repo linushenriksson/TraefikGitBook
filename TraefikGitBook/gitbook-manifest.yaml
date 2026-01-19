@@ -1,0 +1,37 @@
+name: traefikgitbook
+title: TraefikGitBook
+script: src\index.tsx
+description: 'A basic Traefik integration for GitBook. Displays the status of Traefik services.'
+scopes:
+  - space:content:read
+  - space:content:write
+  - space:metadata:read
+  - space:metadata:write
+  - site:metadata:read
+  - site:adaptive:read
+  - site:adaptive:write
+blocks:
+  - id: traefikgitbook
+    title: TraefikGitBook
+    description: My GitBook Integration
+organization: A4Yksr2EBiFQkBVU7qJz
+visibility: private
+configurations:
+  account:
+    properties:
+      traefik_api_url:
+        type: string
+        title: Traefik API URL
+        description: 'The full URL to your Traefik API endpoint (e.g., https://traefik.example.com/api/http/services)'
+      traefik_username:
+        type: string
+        title: Traefik Username
+        description: 'Basic auth username for Traefik API'
+      traefik_password:
+        type: string
+        title: Traefik Password
+        description: 'Basic auth password for Traefik API'
+    required:
+      - traefik_api_url
+      - traefik_username
+      - traefik_password
