@@ -5,11 +5,6 @@ description: 'A basic Traefik integration for GitBook. Displays the status of Tr
 scopes:
   - space:content:read
   - space:content:write
-  - space:metadata:read
-  - space:metadata:write
-  - site:metadata:read
-  - site:adaptive:read
-  - site:adaptive:write
 blocks:
   - id: traefikgitbook
     title: TraefikGitBook
